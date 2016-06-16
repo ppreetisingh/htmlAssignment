@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+	<title>Css Assignment 3</title>
+	<style type="text/css">
+		body
+		{
+			
+			
+
+		}
+		#main
+		{
+			background-image:url("bg.jpg"); 
+			background-size: 100%;
+			height:900px;
+			width: 600px;
+			position: relative;
+			left:400px;
+			
+		}
+		.outer
+		{
+			height:280px;
+			width:550px;
+			margin: 15px 10px;
+			position: relative;
+			top:15px;
+			left:15px;
+			
+		}
+		h3
+		{
+			color:white;
+		}
+		.element
+		{
+			background-color: #96D2E3;
+			border-radius: 5px;
+			margin: 5px 5px;
+
+		}
+		input
+		{
+			margin: 5px 5px;
+			height: 20px;
+			position:absolute;
+			right:35px;
+			width:350px;
+			border-radius: 5px;
+		}
+		textarea
+		{
+			margin: 5px 5px;
+
+			position:relative;
+			border-radius: 5px;
+		}
+		#post
+		{
+			right:-29px;
+		}
+	</style>
+</head>
+<body>
+	<div id="main">
+		<form method="post" action="">
+			<div class="outer">
+				<h3>Step 1:Your Details<h3>
+					<div class="element">
+							Name:<input type="text" name="name" placeholder="First and last name here">
+					</div>
+					<div class="element">
+							Email:<input type="text" name="email" placeholder="example@domain.com">
+					</div>
+					<div class="element">
+							Phone:<input type="text" name="phone" placeholder="e.g. +0123456789">
+					</div>
+			</div>
+			<div class="outer">
+				<h3>Step 1:Delivery Address<h3>
+					<div class="element">
+							Address:<textarea rows="5" cols="55"></textarea>
+					</div>
+					<div class="element">
+							Post Code:<input type="text" id="post" name="post" placeholder="example@domain.com">
+					</div>
+					<div class="element">
+							Country:<input type="text" name="country" placeholder="e.g. +0123456789">
+					</div>
+			</div>
+			<div class="outer">
+				<h3>Step 1:Card Details<h3>
+					<div class="element">
+							Card Type:<input type="radio" name="card"> Visa <input type="radio" name="card"> Amex <input type="radio" name="card"> Master Card
+					</div>
+					<div class="element">
+							Card Number:<input type="text" name="cno">
+					</div>
+					<div class="element">
+							Security Code:<input type="text" name="code">
+					</div>
+					<div class="element">
+							Name on Card:<input type="text" name="nameoncard" placeholder="Name of card Holder">
+					</div>
+			</div>
+		</div>
+	</form>
+</body>
+</html>
