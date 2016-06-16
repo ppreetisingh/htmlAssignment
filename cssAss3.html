@@ -1,110 +1,165 @@
 <!doctype html>
 <html>
 <head>
-	<title>Css Assignment 3</title>
-	<style type="text/css">
-		body
-		{
-			
-			
+  <title>Css Assignment 3</title>
+  <style type="text/css">
+          #main
+          {
+            background-image:url("bg.jpg"); 
+            background-size: 100%;
+            height:650px;
+            width: 600px;
+            position: relative;
+            left:400px;
+            
+          }
 
-		}
-		#main
-		{
-			background-image:url("bg.jpg"); 
-			background-size: 100%;
-			height:900px;
-			width: 600px;
-			position: relative;
-			left:400px;
-			
-		}
-		.outer
-		{
-			height:280px;
-			width:550px;
-			margin: 15px 10px;
-			position: relative;
-			top:15px;
-			left:15px;
-			
-		}
-		h3
-		{
-			color:white;
-		}
-		.element
-		{
-			background-color: #96D2E3;
-			border-radius: 5px;
-			margin: 5px 5px;
+      fieldset{
+        border : none;
+      }
 
-		}
-		input
-		{
-			margin: 5px 5px;
-			height: 20px;
-			position:absolute;
-			right:35px;
-			width:350px;
-			border-radius: 5px;
-		}
-		textarea
-		{
-			margin: 5px 5px;
+      legend{
+        color : white;
+      }
 
-			position:relative;
-			border-radius: 5px;
-		}
-		#post
-		{
-			right:-29px;
-		}
-	</style>
+
+      div.transbox {
+        
+        padding:8px;
+          margin: 8px;
+          background-color: #99BDD5; 
+          border: 1px solid ;
+        border-color : white;
+        border-radius:4px;
+        
+          position: relative;
+      }
+      input[type="text"]
+      {
+        position: absolute;
+        right:10px;
+        width:75%;
+        border-radius: 4px;
+      }
+
+
+      .radioo{
+        
+        position: absolute;
+        right: 216px;
+        top:29px;
+
+      }
+
+      textarea
+      {
+        position: absolute;
+        right: 10px;
+        width:75%;
+        border-radius: 4px;
+      }
+
+      #txta
+      {
+        height:60px;
+      }
+       
+
+      .radio_image{
+        width : 15px;
+        height : 11px;
+      }
+
+      .button_class{
+        border : solid black;
+        border-radius: 10px;
+        color : white;
+        align-left : center;
+        background-color : black;
+        position : relative;
+        left : 43%;
+        width:100px;
+
+      }
+
+  </style>
 </head>
 <body>
-	<div id="main">
-		<form method="post" action="">
-			<div class="outer">
-				<h3>Step 1:Your Details<h3>
-					<div class="element">
-							Name:<input type="text" name="name" placeholder="First and last name here">
-					</div>
-					<div class="element">
-							Email:<input type="text" name="email" placeholder="example@domain.com">
-					</div>
-					<div class="element">
-							Phone:<input type="text" name="phone" placeholder="e.g. +0123456789">
-					</div>
-			</div>
-			<div class="outer">
-				<h3>Step 1:Delivery Address<h3>
-					<div class="element">
-							Address:<textarea rows="5" cols="55"></textarea>
-					</div>
-					<div class="element">
-							Post Code:<input type="text" id="post" name="post" placeholder="example@domain.com">
-					</div>
-					<div class="element">
-							Country:<input type="text" name="country" placeholder="e.g. +0123456789">
-					</div>
-			</div>
-			<div class="outer">
-				<h3>Step 1:Card Details<h3>
-					<div class="element">
-							Card Type:<input type="radio" name="card"> Visa <input type="radio" name="card"> Amex <input type="radio" name="card"> Master Card
-					</div>
-					<div class="element">
-							Card Number:<input type="text" name="cno">
-					</div>
-					<div class="element">
-							Security Code:<input type="text" name="code">
-					</div>
-					<div class="element">
-							Name on Card:<input type="text" name="nameoncard" placeholder="Name of card Holder">
-					</div>
-			</div>
-		</div>
-	</form>
+  <div id="main">
+    <form method="POST" action="" >
+  
+      <fieldset >
+        <legend> Step 1:Your details </legend>
+        
+
+        <div class="transbox">
+          
+          Name <input type="text" name="namme" placeholder="First and last name" > </input>
+          <br>
+           
+        </div> 
+        
+        <div class="transbox">
+          Email 
+          <input type="text" name="email" placeholder="example@domain.com"> </input> 
+          <br>
+        </div>
+          
+        <div class="transbox">
+          Phone 
+          <input type="text" name="phone" placeholder="" ="e.g. +4475000000"> </input>
+          <br> 
+        </div>
+      </fieldset>
+      
+      <fieldset>
+        <legend> Step 1:Delivery address </legend>
+        <div class="transbox" id="txta">
+          Address <textarea rows="4" cols="50" name="address"></textarea>
+        <br>
+        </div>
+
+        <div class="transbox">
+          Pincode <input type="text" name="pin"> </input>
+        <br>
+        </div>
+
+        <div class="transbox">
+        Country <input type="text" name="country" > </input>
+        <br>
+        </div>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Step 1:Card details </legend>
+        <div class="transbox">
+          Card Type <br>
+            <div class="radioo">
+              <input type="radio" value ="agn" name="Visa"> <img src="visa.jpg" alt="visa_logo" class="radio_image"></img> Visa </input> &nbsp
+              <input type="radio" value ="agn" name="AmEx"> <img src="amex.png" alt="amex_logo" class="radio_image"></img> AmEx</input> &nbsp
+              <input type="radio" value ="agn" name="Mastercard"> <img src="mastercard.png" alt="mc_logo" class="radio_image"> </img> Mastercard </input>
+            </div>
+
+          <br>
+        </div>
+        <div class="transbox">
+          Card Number <input type="text" name="card_num" > </input>
+        <br> 
+        </div>
+
+        <div class="transbox">
+          Security Code <input type="text" name="security_code"> </input>
+        <br>
+        </div>
+
+        <div class="transbox">
+          Name on card <input type="text" name="card_name" placeholder="exact name as on the card"> </input>
+        <br>
+        </div>
+      </fieldset>
+      
+      <button class="button_class" type="button" value="BUY IT" name="buy"> BUY IT </button>
+      
+    </form>
 </body>
 </html>
